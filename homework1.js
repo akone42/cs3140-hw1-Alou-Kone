@@ -7,14 +7,14 @@ function sum(arr){
      return total
 }
 
-console.log(sum([2,4,5,6])) // 17
+console.log(sum([1,2,3])) // 6
 
 //
 function average(arr){
     return sum(arr)/ arr.length
 }
 
-console.log(average([2,4,5,6]))
+console.log(average([1,2,3]))
 
 // min
 function min(arr){
@@ -27,4 +27,17 @@ function min(arr){
     return min
 }
 
-console.log(min([1,-4,5,6]))
+console.log(min([3,1,2])) //1
+
+// max
+function max(arr){
+    let max = -Infinity
+    for (const i of arr){
+        if(i >max){
+            max = i
+        }
+    }
+    return max
+}
+
+console.log(max([3,1,2])) //3
