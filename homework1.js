@@ -51,7 +51,19 @@ console.log(capitalize("hello"))
 
 function reverse(str){
     return str.split("").reverse().join("")
-    return temp.join("")
 }
 
 console.log(reverse("hello"))
+
+function countVowels(str){
+    let vowels = ['a','e','i','o','u']
+    let count = 0
+    for (const c of str){
+        if (vowels.includes(c)){
+            count +=1
+        }
+    }
+    return count
+}
+
+console.log(countVowels("hello"))
