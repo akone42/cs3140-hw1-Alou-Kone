@@ -14,7 +14,7 @@ function average(arr){
     return sum(arr)/ arr.length
 }
 
-console.log(average([1,2,3]))
+console.log(average([1,2,3])) //2
 
 // min
 function min(arr){
@@ -41,3 +41,17 @@ function max(arr){
 }
 
 console.log(max([3,1,2])) //3
+
+//Part 2: Strings 
+function capitalize(str){
+    return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
+console.log(capitalize("hello"))
+
+function reverse(str){
+    return str.split("").reverse().join("")
+    return temp.join("")
+}
+
+console.log(reverse("hello"))
