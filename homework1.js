@@ -1,4 +1,7 @@
 //Part 1: Arrays
+
+/* Sum function
+Returns the sum of all elements in an array */
 function sum(arr){
      let total = 0
      for(const i of arr){
@@ -9,14 +12,16 @@ function sum(arr){
 
 console.log(sum([1,2,3])) // 6
 
-//
+/* Average function
+Returns the average of all elements in an array */
 function average(arr){
     return sum(arr)/ arr.length
 }
 
 console.log(average([1,2,3])) //2
 
-// min
+/* min function
+Returns the minimum of all elements in an array */
 function min(arr){
     let min = Infinity
     for (const i of arr){
@@ -29,7 +34,8 @@ function min(arr){
 
 console.log(min([3,1,2])) //1
 
-// max
+/* max function
+Returns the maximum of all elements in an array */
 function max(arr){
     let max = -Infinity
     for (const i of arr){
@@ -43,18 +49,26 @@ function max(arr){
 console.log(max([3,1,2])) //3
 
 //Part 2: Strings 
+
+/* capitalize function
+Capitalize the strings by making the first letter capital */
 function capitalize(str){
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
 console.log(capitalize("hello"))
 
+/*reverse function
+Reverses the characters in a string */
 function reverse(str){
     return str.split("").reverse().join("")
 }
 
 console.log(reverse("hello"))
-// Count Vowels
+
+
+/* Count Vowels 
+Count the number of vowels in the string*/
 function countVowels(str){
     let vowels = ['a','e','i','o','u']
     let count = 0
@@ -68,8 +82,10 @@ function countVowels(str){
 
 console.log(countVowels("hello"))
 
-// Objects
+//Part 3: Objects
 
+/* Create a Student objects and provide student grade average,
+including if the student is in honoral or not*/
 const student = {
     name: "Your Name",
     age: 20,
@@ -81,8 +97,6 @@ const student = {
     isHonorRoll: function(){
         return average(this.grades) > 85
     }
-    
 }
-
 console.log(student.getAverage())
 console.log(student.isHonorRoll())
