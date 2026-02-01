@@ -54,7 +54,7 @@ function reverse(str){
 }
 
 console.log(reverse("hello"))
-
+// Count Vowels
 function countVowels(str){
     let vowels = ['a','e','i','o','u']
     let count = 0
@@ -67,3 +67,22 @@ function countVowels(str){
 }
 
 console.log(countVowels("hello"))
+
+// Objects
+
+const student = {
+    name: "Your Name",
+    age: 20,
+    grades: [85,90,78],
+    getAverage: function(){
+        // return average
+        return average(this.grades)
+    },
+    isHonorRoll: function(){
+        return average(this.grades) > 85
+    }
+    
+}
+
+console.log(student.getAverage())
+console.log(student.isHonorRoll())
